@@ -33,7 +33,7 @@ $arrowRight.addEventListener('click', event => {
         } 
     });
 
-    if($isOneInputChecked === true) {
+    if($isOneInputChecked === true && $inputs[$inputs.length - 1].getAttribute('value') !== 'Submit') {
         $arrowRight.disabled = false;
     } else {
         $arrowRight.disabled = true;
